@@ -48,6 +48,7 @@
     "type": "martial_art",
     "copy-from": "style_niten",
     "id": "style_niten",
+    "name": { "str": "Niten Ichi-Ryu" },
     "extend": { "weapons": [ "nec_fine_katana" ] }
   }
 ]
