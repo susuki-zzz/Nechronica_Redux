@@ -41,7 +41,6 @@
         [ "default_ZQrare_death_drops", 100 ]
       ]
     },
-    "death_function": [ "NORMAL" ],
     "regenerates": 10,
     "burn_into": "mon_zombie_scorched",
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
@@ -87,7 +86,6 @@
     "path_settings": { "max_dist": 10 },
     "special_attacks": [ [ "PARROT", 2 ] ],
     "death_drops": "default_ZQ_death_drops",
-    "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_scorched",
     "upgrades": {
       "half_life": 30,
@@ -140,9 +138,9 @@
         [ "child_items", 65 ]
       ]
     },
-    "death_function": [ "NORMAL" ],
+    "death_function": { "effect": { "id": "death_guilt", "min_level": 6 } },
     "burn_into": "mon_zombie_scorched",
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "GUILT", "NO_BREATHE", "REVIVES", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ]
   },
   {
     "id": "mon_nec_nemesis",
@@ -181,7 +179,6 @@
         [ "default_Nemesis_death_drops", 100 ]
       ]
     },
-    "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_fiend",
     "flags": [
       "SEES",
@@ -236,7 +233,6 @@
         [ "default_zombie_death_drops", 100 ]
       ]
     },
-    "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_fiend",
     "flags": [ "SEES", "HEARS", "SMELLS", "BASHES", "FLIES", "POISON", "NO_BREATHE", "PUSH_MON", "ELECTRONIC", "FILTHY" ]
   },
@@ -266,7 +262,6 @@
     "luminance": 20,
     "special_attacks": [ [ "scratch", 5 ] ],
     "death_drops": "default_zombie_death_drops",
-    "death_function": [ "NORMAL" ],
     "regenerates": 1,
     "burn_into": "mon_zombie_fiend",
     "flags": [ "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ]
