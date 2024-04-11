@@ -8,7 +8,8 @@
     "default_faction": "zombie",
     "symbol": "Q",
     "color": "dark_gray",
-    "size": "MEDIUM",
+    "volume": "62500 ml",
+    "weight": "81500 g",
     "diff": 20,
     "hp": 300,
     "speed": 90,
@@ -27,10 +28,21 @@
     "vision_night": 6,
     "path_settings": { "max_dist": 10 },
     "harvest": "zombie",
-    "special_attacks": [ [ "RESURRECT", 10 ], [ "UPGRADE", 10 ], [ "TENTACLE", 5 ], [ "PARROT", 3 ] ],
-    "death_drops": { "subtype": "collection", "groups": [ [ "default_ZQ_death_drops", 100 ], [ "default_ZQrare_death_drops", 100 ] ] },
+    "special_attacks": [
+      [ "RESURRECT", 10 ],
+      [ "UPGRADE", 10 ],
+      [ "TENTACLE", 5 ],
+      [ "PARROT", 3 ]
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [ "default_ZQ_death_drops", 100 ],
+        [ "default_ZQrare_death_drops", 100 ]
+      ]
+    },
     "death_function": [ "NORMAL" ],
-	"regenerates": 10,
+    "regenerates": 10,
     "burn_into": "mon_zombie_scorched",
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "flags": [
@@ -56,7 +68,8 @@
     "default_faction": "zombie",
     "symbol": "Q",
     "color": "dark_gray",
-    "size": "MEDIUM",
+    "volume": "62500 ml",
+    "weight": "81500 g",
     "hp": 200,
     "speed": 90,
     "material": [ "flesh" ],
@@ -76,7 +89,10 @@
     "death_drops": "default_ZQ_death_drops",
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_scorched",
-    "upgrades": { "half_life": 30, "into": "mon_nec_ZQ_sama" },
+    "upgrades": {
+      "half_life": 30,
+      "into": "mon_nec_ZQ_sama"
+    },
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "flags": [
       "SEES",
@@ -99,7 +115,8 @@
     "description": "Originally it looked like a girl, but now her ego collapsed she's gone mad.",
     "species": [ "ZOMBIE" ],
     "default_faction": "zombie",
-    "size": "SMALL",
+    "volume": "30000 ml",
+    "weight": "40750 g",
     "hp": 60,
     "speed": 80,
     "material": [ "flesh" ],
@@ -113,8 +130,16 @@
     "melee_cut": 3,
     "vision_night": 5,
     "harvest": "zombie",
-    "special_attacks": [ [ "SHRIEK_ALERT", 10 ], [ "SHRIEK_STUN", 5 ] ],
-    "death_drops": { "groups": [ [ "default_zombie_clothes", 100 ], [ "child_items", 65 ] ] },
+    "special_attacks": [
+      [ "SHRIEK_ALERT", 10 ],
+      [ "SHRIEK_STUN", 5 ]
+    ],
+    "death_drops": {
+      "groups": [
+        [ "default_zombie_clothes", 100 ],
+        [ "child_items", 65 ]
+      ]
+    },
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_scorched",
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "GUILT", "NO_BREATHE", "REVIVES", "FILTHY" ]
@@ -126,7 +151,8 @@
     "description": "Has the appearance of a girl, but it is swinging a knife with obvious superhuman speed and strength. There is no doubt that it is reinforced with blaspheming techniques.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE" ],
-    "size": "MEDIUM",
+    "volume": "62500 ml",
+    "weight": "81500 g",
     "hp": 200,
     "speed": 125,
     "material": [ "flesh" ],
@@ -141,10 +167,20 @@
     "armor_bash": 2,
     "armor_cut": 3,
     "vision_night": 10,
+    "bleed_rate": 0,
     "harvest": "zombie",
     "dodge": 2,
-    "special_attacks": [ [ "BRANDISH", 10 ], { "id": "impale" } ],
-    "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_death_drops", 100 ], [ "default_Nemesis_death_drops", 100 ] ] },
+    "special_attacks": [
+      [ "BRANDISH", 10 ],
+      { "id": "impale" }
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [ "default_zombie_death_drops", 100 ],
+        [ "default_Nemesis_death_drops", 100 ]
+      ]
+    },
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_fiend",
     "flags": [
@@ -155,7 +191,6 @@
       "WARM",
       "BASHES",
       "GROUP_BASH",
-      "BLEED",
       "POISON",
       "NO_BREATHE",
       "REVIVES",
@@ -171,7 +206,8 @@
     "description": "It was mostly horrible machine remodeling that kept the prototype of the human body intact. It has no legs and is floating with something like a floater.",
     "default_faction": "science",
     "species": [ "ZOMBIE" ],
-    "size": "MEDIUM",
+    "volume": "62500 ml",
+    "weight": "81500 g",
     "hp": 200,
     "speed": 105,
     "material": [ "flesh" ],
@@ -188,9 +224,18 @@
     "armor_stab": 12,
     "vision_night": 20,
     "harvest": "CBM_OP",
+    "bleed_rate": 25,
     "luminance": 20,
-    "special_attacks": [ [ "TAZER", 10 ], [ "SHOCKSTORM", 20 ] ],
-    "death_drops": { "groups": [ [ "robots", 100 ], [ "default_zombie_death_drops", 100 ] ] },
+    "special_attacks": [
+      [ "TAZER", 10 ],
+      [ "SHOCKSTORM", 20 ]
+    ],
+    "death_drops": {
+      "groups": [
+        [ "robots", 100 ],
+        [ "default_zombie_death_drops", 100 ]
+      ]
+    },
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_fiend",
     "flags": [ "SEES", "HEARS", "SMELLS", "BASHES", "FLIES", "POISON", "NO_BREATHE", "PUSH_MON", "ELECTRONIC", "FILTHY" ]
@@ -203,7 +248,8 @@
     "default_faction": "zombie",
     "species": [ "ZOMBIE" ],
     "diff": 2,
-    "size": "MEDIUM",
+    "volume": "62500 ml",
+    "weight": "81500 g",
     "hp": 200,
     "speed": 75,
     "material": [ "flesh" ],
@@ -221,8 +267,8 @@
     "special_attacks": [ [ "scratch", 5 ] ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
-	"regenerates": 1,
+    "regenerates": 1,
     "burn_into": "mon_zombie_fiend",
-    "flags": [ "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY"]
+    "flags": [ "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ]
   }
 ]
