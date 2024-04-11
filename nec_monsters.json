@@ -167,6 +167,7 @@
     "armor_bash": 2,
     "armor_cut": 3,
     "vision_night": 10,
+    "bleed_rate": 0,
     "harvest": "zombie",
     "dodge": 2,
     "special_attacks": [
@@ -223,6 +224,7 @@
     "armor_stab": 12,
     "vision_night": 20,
     "harvest": "CBM_OP",
+    "bleed_rate": 25,
     "luminance": 20,
     "special_attacks": [
       [ "TAZER", 10 ],
